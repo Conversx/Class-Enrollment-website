@@ -1,0 +1,268 @@
+{
+  "users": [
+    {
+      "StuID": "6421605200",
+      "username": "1",
+      "password": "1",
+      "Email": "Kritsanagun.c@ku.th",
+      "Phone": "0820821782",
+      "avatar": "/src/assets/ceo.jpg",
+      "firstName": "กฤษณกันต์",
+      "lastName": "ช่างสลัก",
+      "EfirstName": "Kritsanagun",
+      "ElastName": "Changsalak",
+      "faculty": "ศิลปศาสตร์และวิทยาศาสตร์",
+      "major": "เทคโนโลยีสารสนเทศ",
+      "gender": "ชาย",
+      "ages": "20",
+      "religion": "พุทธ",
+      "nationality": "ไทย",
+      "id": "be2b"
+    },
+    {
+      "StuID": "6421605201",
+      "username": "b6421605201",
+      "password": "88888888",
+      "Email": "Johncena.c@ku.th",
+      "Phone": "0852545667",
+      "avatar": "/src/assets/user.png",
+      "firstName": "John",
+      "lastName": "Cena",
+      "faculty": "ศิลปศาสตร์และวิทยาศาสตร์",
+      "major": "เทคโนโลยีสารสนเทศ",
+      "gender": "ชาย",
+      "ages": "52",
+      "religion": "พุทธ",
+      "nationality": "ไทย",
+      "id": "be2b"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "courseID": "327101",
+      "courseName": "Calculus I",
+      "credit": 3,
+      "description": "รายวิชาที่เน้นการศึกษาเกี่ยวกับคณิตศาสตร์แบบอนุกรม รวมถึงการบวก ลบ คูณ หาร ของจำนวนจริง และการแทนด้วยกราฟและตาราง"
+    },
+    {
+      "id": "2",
+      "courseID": "327102",
+      "courseName": "Calculus II",
+      "credit": 3,
+      "description": "รายวิชาที่เป็นการพัฒนาจาก Calculus I โดยเน้นการศึกษาเรื่องของฟังก์ชัน อนุพันธ์ การอินทิเกรต และการแก้สมการอนุพันธ์"
+    },
+    {
+      "id": "3",
+      "courseID": "327203",
+      "courseName": "English",
+      "credit": 2,
+      "description": "รายวิชาที่เน้นการพัฒนาทักษะทางภาษาอังกฤษทั้งในด้านการอ่าน เขียน ฟัง และพูด"
+    },
+    {
+      "id": "4",
+      "courseID": "327509",
+      "courseName": "Science",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับวิทยาศาสตร์ทั่วไป รวมถึงหลักการและการทดลองทางวิทยาศาสตร์"
+    },
+    {
+      "id": "5",
+      "courseID": "353201",
+      "courseName": "Programming",
+      "credit": 3,
+      "description": "รายวิชาที่เน้นการพัฒนาทักษะในการเขียนโปรแกรม และการแก้ปัญหาด้วยการโปรแกรม"
+    },
+    {
+      "id": "6",
+      "courseID": "353211",
+      "courseName": "AI learning",
+      "credit": 1,
+      "description": "รายวิชาที่เน้นการเรียนรู้ของปัญญาประดิษฐ์ และการประยุกต์ใช้ในงานต่าง ๆ"
+    },
+    {
+      "id": "7",
+      "courseID": "327301",
+      "courseName": "Linear Algebra",
+      "credit": 1,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับการใช้ตัวแปรและการดำเนินการทางเมตริก"
+    },
+    {
+      "id": "8",
+      "courseID": "327401",
+      "courseName": "Differential Equations",
+      "credit": 1,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับสมการต่อเนื่องแบบต่าง ๆ และการแก้ไข"
+    },
+    {
+      "id": "9",
+      "courseID": "327501",
+      "courseName": "Statistics",
+      "credit": 2,
+      "description": "รายวิชาที่เน้นการวิเคราะห์และการอธิบายข้อมูลทางสถิติ"
+    },
+    {
+      "id": "10",
+      "courseID": "327601",
+      "courseName": "Chemistry",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับหลักการและกระบวนการทางเคมี"
+    },
+    {
+      "id": "11",
+      "courseID": "353301",
+      "courseName": "Web Development",
+      "credit": 3,
+      "description": "รายวิชาที่เน้นการพัฒนาเว็บไซต์และการออกแบบต่าง ๆ"
+    },
+    {
+      "id": "12",
+      "courseID": "353401",
+      "courseName": "Database Management",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาการจัดการฐานข้อมูลและคำสั่ง SQL"
+    },
+    {
+      "id": "13",
+      "courseID": "353501",
+      "courseName": "Operating Systems",
+      "credit": 3,
+      "description": "รายวิชาที่เน้นการศึกษาระบบปฏิบัติการและการทำงานของมัน"
+    },
+    {
+      "id": "14",
+      "courseID": "353601",
+      "courseName": "Computer Networks",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับโครงสร้างและการทำงานของเครือข่ายคอมพิวเตอร์"
+    },
+    {
+      "id": "15",
+      "courseID": "353701",
+      "courseName": "Machine Learning",
+      "credit": 1,
+      "description": "รายวิชาที่เน้นการศึกษาและประยุกต์ใช้เทคนิคการเรียนรู้ของเครื่อง"
+    },
+    {
+      "id": "16",
+      "courseID": "353801",
+      "courseName": "Cybersecurity",
+      "credit": 1,
+      "description": "รายวิชาที่ศึกษาการป้องกันและการตอบสนองต่อภัยคุกคามทางไซเบอร์"
+    },
+    {
+      "id": "17",
+      "courseID": "327701",
+      "courseName": "History",
+      "credit": 1,
+      "description": "รายวิชาที่ศึกษาประวัติศาสตร์ทั่วไป"
+    },
+    {
+      "id": "18",
+      "courseID": "327801",
+      "courseName": "Psychology",
+      "credit": 1,
+      "description": "รายวิชาที่ศึกษาเรื่องพฤติกรรมและจิตวิทยา"
+    },
+    {
+      "id": "19",
+      "courseID": "327901",
+      "courseName": "Philosophy",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเรื่องปรัชญาและการวิเคราะห์ความคิด"
+    },
+    {
+      "id": "20",
+      "courseID": "328001",
+      "courseName": "Economics",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับหลักการของเศรษฐศาสตร์"
+    },
+    {
+      "id": "21",
+      "courseID": "328101",
+      "courseName": "Political Science",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเรื่องการปกครองและวิทยาการการเมือง"
+    },
+    {
+      "id": "22",
+      "courseID": "353901",
+      "courseName": "Data Science",
+      "credit": 3,
+      "description": "รายวิชาที่เน้นการวิเคราะห์ข้อมูลและการนำเสนอข้อมูล รวมถึงการใช้เทคนิคต่าง ๆ ในการทำนายและการตัดสินใจ"
+    },
+    {
+      "id": "23",
+      "courseID": "354001",
+      "courseName": "Artificial Intelligence Ethics",
+      "credit": 2,
+      "description": "รายวิชาที่ศึกษาเรื่องจรรยาบรรณในการใช้ปัญญาประดิษฐ์"
+    },
+    {
+      "id": "24",
+      "courseID": "354101",
+      "courseName": "Mobile App Development",
+      "credit": 3,
+      "description": "รายวิชาที่เน้นการพัฒนาแอปพลิเคชันสำหรับอุปกรณ์พกพา"
+    },
+    {
+      "id": "25",
+      "courseID": "354201",
+      "courseName": "Cloud Computing",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับการให้บริการผ่านทางคลาวด์และโครงสร้างพื้นฐานทางคลาวด์"
+    },
+    {
+      "id": "26",
+      "courseID": "354301",
+      "courseName": "Human-Computer Interaction",
+      "credit": 2,
+      "description": "รายวิชาที่ศึกษาเรื่องการปฏิสัมพันธ์ระหว่างมนุษย์กับคอมพิวเตอร์"
+    },
+    {
+      "id": "27",
+      "courseID": "354401",
+      "courseName": "Big Data Analytics",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาการวิเคราะห์ข้อมูลขนาดใหญ่และการนำเสนอผลการวิเคราะห์"
+    },
+    {
+      "id": "28",
+      "courseID": "354501",
+      "courseName": "Cyber Threat Intelligence",
+      "credit": 2,
+      "description": "รายวิชาที่ศึกษาการตรวจจับและการตอบสนองต่อภัยคุกคามทางไซเบอร์"
+    },
+    {
+      "id": "29",
+      "courseID": "354601",
+      "courseName": "Blockchain Technology",
+      "credit": 3,
+      "description": "รายวิชาที่ศึกษาเกี่ยวกับเทคโนโลยีบล็อกเชนและการใช้งาน"
+    },
+    {
+      "id": "30",
+      "courseID": "354701",
+      "courseName": "Network Security",
+      "credit": 3,
+      "description": "รายวิชาที่เน้นการป้องกันและรักษาความปลอดภัยของระบบเครือข่าย รวมถึงการตรวจจับและตอบสนองต่อภัยคุกคามทางไซเบอร์"
+    }
+  ],
+  "enrollment": [
+    {
+      "id": "af17",
+      "StuID": "6421605200",
+      "courseID": "327101",
+      "courseName": "Calculus I",
+      "credit": 3
+    },
+    {
+      "id": "d49d",
+      "StuID": "6421605200",
+      "courseID": "327102",
+      "courseName": "Calculus II",
+      "credit": 3
+    }
+  ]
+}
