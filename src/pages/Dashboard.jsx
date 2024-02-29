@@ -10,7 +10,7 @@ const CenteredContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  margin-top: 125px;
+  margin-top: 425px;
   margin-left: auto;
   margin-right: auto;
 `;
