@@ -18,15 +18,15 @@
 ![Schedule](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/136dffde-19bb-4b42-a1d3-2a9c6c60c874)
 
 
-6. Enrollment
+5. Enrollment
 ![Enrollment jsx](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/f08de77b-9844-41c0-bd66-7b94b2367be2)
 
 
-7. Dashboard
+6. Dashboard
 ![Dashboard jsx](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/8d6ebb38-f0ae-4e97-8053-a80c05c7c2d7)
 
 
-8. PDF(STD_ENROLL_REPORT)
+7. PDF(STD_ENROLL_REPORT)
    
       ![pdf](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/ca1f939f-d2df-4b24-9352-fcad3c97bbb8)
 
