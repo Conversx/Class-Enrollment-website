@@ -3,20 +3,29 @@
 *Simple Content in Website*
 
 1. Home page
-![Home jsx](https://github.com/Conversx/ClassEnroll/assets/154034573/e4b1d04d-7640-42ff-a7e5-f142100ca162)
+![Home jsx](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/17a4c6c3-0fe2-4bc5-9026-bacae38c6d8d)
+
 
 2. User Info
-![User jsx](https://github.com/Conversx/ClassEnroll/assets/154034573/f51f5de5-f57c-4e24-bb72-db3823dd5f3f)
+![User jsx](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/3ab25ff7-e4e9-4d0f-a407-32fc6b774a8c)
+
 
 3. Course List
-![CourseList jsx](https://github.com/Conversx/ClassEnroll/assets/154034573/790c0c0e-4deb-4f73-a2c8-f3c47e0d57b6)
+![CourseList jsx](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/ad239ff1-5f61-4c28-ada4-8eb87d5ec7a3)
 
-4. Enrollment
-![Enrollment jsx](https://github.com/Conversx/ClassEnroll/assets/154034573/71b797dd-6390-4193-a7af-2cb70704846e)
 
-5. Dashboard
-![Dashboard jsx](https://github.com/Conversx/ClassEnroll/assets/154034573/dc364ee9-9221-49ef-bc9e-c70fe2f35518)
+4. Schedule
+![Schedule](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/136dffde-19bb-4b42-a1d3-2a9c6c60c874)
 
-6. PDF(STD_ENROLL_REPORT)
 
-     ![pdf](https://github.com/Conversx/ClassEnroll/assets/154034573/1a4d1711-cff0-454f-8969-db9bce61a132)
+6. Enrollment
+![Enrollment jsx](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/f08de77b-9844-41c0-bd66-7b94b2367be2)
+
+
+7. Dashboard
+![Dashboard jsx](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/8d6ebb38-f0ae-4e97-8053-a80c05c7c2d7)
+
+
+8. PDF(STD_ENROLL_REPORT)
+![pdf](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/ca1f939f-d2df-4b24-9352-fcad3c97bbb8)
+
