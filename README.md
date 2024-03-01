@@ -27,5 +27,6 @@
 
 
 8. PDF(STD_ENROLL_REPORT)
-            ![pdf](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/ca1f939f-d2df-4b24-9352-fcad3c97bbb8)
+   
+      ![pdf](https://github.com/Conversx/Class-Enrollment-website/assets/154034573/ca1f939f-d2df-4b24-9352-fcad3c97bbb8)
 
