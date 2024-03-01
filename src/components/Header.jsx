@@ -60,7 +60,7 @@ const Header = ({ toggleSidebar, handleLogout }) => {
       </HeaderIcons>
       <HeaderContent>
         <Logo>
-          <img src="/src/assets/mcul.png" alt="Logo" width="40" height="40" />
+          <img src="https://media.discordapp.net/attachments/1023613706732572683/1212789183794647070/mcul.png?ex=65f31cf1&is=65e0a7f1&hm=582219314d084ab0c587b13bad9878303ef6717f9d565c126f35ec9a40c90a54&=&format=webp&quality=lossless&width=881&height=167" alt="Logo" width="40" height="40" />
         </Logo>
         <PowerOffIcon onClick={handleLogout} />
       </HeaderContent>

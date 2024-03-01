@@ -10,9 +10,10 @@ const CenteredContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  margin-top: 425px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 `;
 
 const EnrollmentContainer = styled.div`
@@ -209,45 +210,33 @@ const Dashboard = ({ currentUser }) => {
     pdf.setLineWidth(0.5);
     pdf.line(20, textY + 13, pdf.internal.pageSize.width - 20, textY + 13);
   
-    const itemsPerPage = 15; // Adjust as needed
-    const totalPages = Math.ceil(visibleEnrollments.length / itemsPerPage);
+    // Table Data
+    const tableData = userEnrollments.map((enrollment) => [
+      enrollment.courseID,
+      enrollment.courseName,
+      enrollment.credit
+    ]);
   
-    for (let currentPage = 1; currentPage <= totalPages; currentPage++) {
-      // Table Data for the current page
-      const startIndex = (currentPage - 1) * itemsPerPage;
-      const endIndex = startIndex + itemsPerPage;
-      const tableData = visibleEnrollments.slice(startIndex, endIndex).map((enrollment, index) => [
-        (currentPage - 1) * itemsPerPage + index + 1, // Sequence number
-        enrollment.courseID,
-        enrollment.courseName,
-        enrollment.credit
-      ]);
-  
-      // Table
-      pdf.autoTable({
-        head: [['No.', 'Course ID', 'Course Name', 'Credit']],
-        body: tableData,
-        startY: currentPage === 1 ? textY + 23 : 10, // Start lower on subsequent pages
-        styles: {
-          font: 'THSarabunNew',
-          fontSize: 12,
-          textColor: [44, 62, 80],
-          halign: 'center',
-          valign: 'middle'
-        },
-        headStyles: { fillColor: [41, 128, 185], textColor: 255 },
-        bodyStyles: { fillColor: 255 }
-      });
-  
-      // Add a new page if there are more pages
-      if (currentPage < totalPages) {
-        pdf.addPage();
-      }
-    }
+    // Table
+    pdf.autoTable({
+      head: [['Course ID', 'Course Name', 'Credit']],
+      body: tableData,
+      startY: textY + 23,
+      styles: {
+        font: 'THSarabunNew',
+        fontSize: 12,
+        textColor: [44, 62, 80],
+        halign: 'center',
+        valign: 'middle'
+      },
+      headStyles: { fillColor: [41, 128, 185], textColor: 255 },
+      bodyStyles: { fillColor: 255 }
+    });
   
     // Save PDF with student ID
     pdf.save(`STD_ENROLL_REPORT_${currentUser.StuID}`);
   };
+  
   
   
 

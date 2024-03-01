@@ -116,9 +116,23 @@ const Enrollment = ({ courses, currentUser }) => {
     return userEnrollments.some((enrollment) => enrollment.courseID === courseID);
   };
 
-  const handleEnrollment = async (courseID, courseName, credit) => {
+  const handleEnrollment = async (courseID, courseName, credit, schedule) => {
     if (isEnrolled(courseID)) {
       alert('คุณได้ลงทะเบียนวิชานี้แล้ว');
+      return;
+    }
+
+    // Check for schedule conflicts
+    const hasScheduleConflict = userEnrollments.some(
+      (enrollment) =>
+        enrollment.schedule &&
+        schedule &&
+        enrollment.schedule.day === schedule.day &&
+        enrollment.schedule.time === schedule.time
+    );
+
+    if (hasScheduleConflict) {
+      alert('มีคอร์สที่มีการเรียนซ้ำกันในเวลานี้แล้ว');
       return;
     }
 
@@ -127,6 +141,7 @@ const Enrollment = ({ courses, currentUser }) => {
       courseID: courseID,
       courseName: courseName,
       credit: credit,
+      schedule: schedule,
     };
 
     try {
@@ -208,10 +223,24 @@ const Enrollment = ({ courses, currentUser }) => {
             <CourseItem>
               <strong>หน่วยกิต:</strong> {course.credit}
             </CourseItem>
+            {course.schedule && (
+              <CourseItem>
+                <strong>วันเวลา:</strong> {course.schedule.day} {course.schedule.time}
+              </CourseItem>
+            )}
+            {course.schedule && (
+              <CourseItem>
+                <strong>สถานที่เรียน:</strong> {course.schedule.location}
+              </CourseItem>
+            )}
             {isEnrolled(course.courseID) ? (
               <p style={{ color: 'black' }}>คุณได้ลงทะเบียนวิชานี้แล้ว</p>
             ) : (
-              <EnrollmentButton onClick={() => handleEnrollment(course.courseID, course.courseName, course.credit)}>
+              <EnrollmentButton
+                onClick={() =>
+                  handleEnrollment(course.courseID, course.courseName, course.credit, course.schedule)
+                }
+              >
                 ลงทะเบียนเรียน
               </EnrollmentButton>
             )}

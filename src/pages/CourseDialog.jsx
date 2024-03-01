@@ -61,7 +61,19 @@ const CourseDialog = ({ course, onClose }) => (
       <CourseInfo><strong>รหัสวิชา:</strong> {course.courseID}</CourseInfo>
       <CourseInfo><strong>ชื่อวิชา:</strong> {course.courseName}</CourseInfo>
       <CourseInfo><strong>หน่วยกิต:</strong> {course.credit}</CourseInfo>
+      <CourseInfo><strong>วันที่เรียน:</strong> {course.schedule.day}</CourseInfo>
+      <CourseInfo><strong>เวลาเรียน:</strong> {course.schedule.time}</CourseInfo>
+      <CourseInfo><strong>สถานที่:</strong> {course.schedule.location}</CourseInfo>
       <Description>{course.description}</Description>
+
+      {/* Check if the course has day, time, and location properties before accessing them */}
+      {course.day && course.time && course.location && (
+        <CourseSchedule>
+          <strong>วันเวลา:</strong> {course.day}, {course.time}
+          <br />
+          <strong>สถานที่:</strong> {course.location}
+        </CourseSchedule>
+      )}
     </DialogContent>
   </DialogOverlay>
 );

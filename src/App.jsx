@@ -14,6 +14,7 @@ import Dashboard from './pages/Dashboard';
 import NewsDetails from './pages/NewsDetails';
 
 import usersData from './assets/data.json';
+import Schedule from './pages/Schedule';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -102,6 +103,7 @@ function App() {
                 <Route path="/news/:id" element={<NewsDetails />} />
                 <Route path="/enrollment" element={<Enrollment handleEnrollment={handleEnrollment} currentUser={currentUser} courses={usersData.courses} />}/>
                 <Route path="/dashboard" element={<Dashboard currentUser={currentUser} />} />
+                <Route path="/schedule" element={<Schedule currentUser={currentUser} />} />
               </Routes>
             </>
           ) : (

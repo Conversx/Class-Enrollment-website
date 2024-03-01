@@ -125,6 +125,7 @@ const Sidebar = ({ isOpen, closeSidebar, handlePageChange, userData, ...rest }) 
       <Divider />
       <SidebarLinkWithIcon to="/" icon={<IoNewspaper />} label="หน้าหลัก" onClick={() => closeAndNavigate('Home')} />
       <SidebarLinkWithIcon to="/user" icon={<FaUser />} label="ข้อมูลนิสิต" onClick={() => closeAndNavigate('User')} />
+      <SidebarLinkWithIcon to="/schedule" icon={<MdSpaceDashboard />} label="ตารางเรียน" onClick={() => closeAndNavigate('Schedule')} />
       <Divider />
       <SidebarLinkWithIcon to="/courses" icon={<MdSubject />} label="รายวิชา" onClick={() => closeAndNavigate('Courses')} />
       <SidebarLinkWithIcon to="/enrollment" icon={<IoFileTrayStacked />} label="ลงทะเบียนเรียน" onClick={() => closeAndNavigate('Enrollment')} />
