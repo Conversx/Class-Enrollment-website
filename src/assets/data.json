@@ -40,8 +40,8 @@
     },
     {
       "StuID": "8888888888",
-      "username": "1",
-      "password": "1",
+      "username": "Test789",
+      "password": "Test1234",
       "Email": "test.c@ku.th",
       "Phone": "0828885212",
       "avatar": "/src/assets/ceo.jpg",
@@ -144,6 +144,58 @@
         "day": "Monday",
         "time": "10:00 AM - 12:00 PM",
         "location": "Room 101"
+      }
+    },
+    {
+      "id": "1c43",
+      "StuID": "6421605200",
+      "EnrollmentID": "EN1709517451442",
+      "courseID": "327101",
+      "courseName": "Calculus I",
+      "credit": 3,
+      "schedule": {
+        "day": "Monday",
+        "time": "10:00 AM - 12:00 PM",
+        "location": "Room 101"
+      }
+    },
+    {
+      "id": "7bbd",
+      "StuID": "6421605200",
+      "EnrollmentID": "EN1709517453946",
+      "courseID": "327102",
+      "courseName": "Calculus II",
+      "credit": 3,
+      "schedule": {
+        "day": "Wednesday",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Room 201"
+      }
+    },
+    {
+      "id": "0f64",
+      "StuID": "8888888888",
+      "EnrollmentID": "EN1709522993485",
+      "courseID": "327102",
+      "courseName": "Calculus II",
+      "credit": 3,
+      "schedule": {
+        "day": "Wednesday",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Room 201"
+      }
+    },
+    {
+      "id": "1541",
+      "StuID": "8888888888",
+      "EnrollmentID": "EN1709522995156",
+      "courseID": "327203",
+      "courseName": "English",
+      "credit": 2,
+      "schedule": {
+        "day": "Tuesday",
+        "time": "9:00 AM - 11:00 AM",
+        "location": "Room 102"
       }
     }
   ]

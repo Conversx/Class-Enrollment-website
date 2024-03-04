@@ -72,7 +72,7 @@ const Login = ({ handleLogin }) => {
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
     // Validate username length
-    if (e.target.value.length >= 1) {
+    if (e.target.value.length >= 10) {
       setUsernameError('');
     } else {
       setUsernameError('*บัญชีผู้ใช้ 10 ตัวอักษรขึ้นไป');
@@ -82,7 +82,7 @@ const Login = ({ handleLogin }) => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
     // Validate password length
-    if (e.target.value.length >= 1) {
+    if (e.target.value.length >= 8) {
       setPasswordError('');
     } else {
       setPasswordError('*รหัสผ่าน 8 ตัวอักษรขึ้นไป');
@@ -95,7 +95,7 @@ const Login = ({ handleLogin }) => {
     // Check if both username and password are not empty
     if (username.trim() !== '' && password.trim() !== '') {
       // Check if there are errors before submitting
-      if (username.length >= 1 && password.length >= 1) {
+      if (username.length >= 10 && password.length >= 8) {
         handleLogin(username, password);
       } else {
         // Display length error messages if there are validation errors
