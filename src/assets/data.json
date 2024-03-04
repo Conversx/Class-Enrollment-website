@@ -2,8 +2,8 @@
   "users": [
     {
       "StuID": "6421605200",
-      "username": "1",
-      "password": "1",
+      "username": "b6421605200",
+      "password": "88888888",
       "Email": "Kritsanagun.c@ku.th",
       "Phone": "0820821782",
       "avatar": "/src/assets/ceo.jpg",
@@ -21,8 +21,8 @@
     },
     {
       "StuID": "6421605201",
-      "username": "2",
-      "password": "2",
+      "username": "b6421605201",
+      "password": "88888888",
       "Email": "Johncena.c@ku.th",
       "Phone": "0852545667",
       "avatar": "/src/assets/user.png",
@@ -34,6 +34,25 @@
       "major": "เทคโนโลยีสารสนเทศ",
       "gender": "ชาย",
       "ages": "52",
+      "religion": "พุทธ",
+      "nationality": "ไทย",
+      "id": "be2b"
+    },
+    {
+      "StuID": "8888888888",
+      "username": "1",
+      "password": "1",
+      "Email": "test.c@ku.th",
+      "Phone": "0828885212",
+      "avatar": "/src/assets/ceo.jpg",
+      "firstName": "Test",
+      "lastName": "Kung",
+      "EfirstName": "Test", 
+      "ElastName": "kung",
+      "faculty": "ศิลปศาสตร์และวิทยาศาสตร์",
+      "major": "เทคโนโลยีสารสนเทศ",
+      "gender": "ชาย",
+      "ages": "20",
       "religion": "พุทธ",
       "nationality": "ไทย",
       "id": "be2b"
@@ -105,7 +124,7 @@
       "courseID": "353202",
       "courseName": "Programming II",
       "credit": 3,
-      "description": "รายวิชาที่เน้นการศึกษาเกี่ยวกับคณิตศาสตร์แบบอนุกรม รวมถึงการบวก ลบ คูณ หาร ของจำนวนจริง และการแทนด้วยกราฟและตาราง",
+      "description": "รายวิชาที่เน้นการพัฒนาทักษะในการเขียนโปรแกรม และการแก้ปัญหาด้วยการโปรแกรมภาคต่อ",
       "schedule": {
         "day": "Monday",
         "time": "10:00 AM - 12:00 PM",
@@ -113,5 +132,42 @@
       }
     }
   ],
-  "enrollment": []
+  "enrollment": [
+    {
+      "id": "6441","StuID": "6421605200",
+      "courseID": "327101","courseName": "Calculus I","credit": 3,
+      "schedule": {
+        "day": "Monday",
+        "time": "10:00 AM - 12:00 PM",
+        "location": "Room 101"
+      }
+    },
+    {
+      "id": "8e0e","StuID": "6421605200",
+      "courseID": "327102","courseName": "Calculus II","credit": 3,
+      "schedule": {
+        "day": "Wednesday",
+        "time": "2:00 PM - 4:00 PM",
+        "location": "Room 201"
+      }
+    },
+    {
+      "id": "7aad","StuID": "6421605200",
+      "courseID": "327203","courseName": "English","credit": 2,
+      "schedule": {
+        "day": "Tuesday",
+        "time": "9:00 AM - 11:00 AM",
+        "location": "Room 102"
+      }
+    },
+    {
+      "id": "3ac3","StuID": "6421605200",
+      "courseID": "353201","courseName": "Programming","credit": 3,
+      "schedule": {
+        "day": "Monday",
+        "time": "3:00 PM - 5:00 PM",
+        "location": "Room 202"
+      }
+    }
+  ]
 }
