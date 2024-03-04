@@ -1,3 +1,4 @@
+// Schedule.jsx
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
@@ -37,22 +38,22 @@ const ColoredTableData = styled(TableData)`
   background-color: #f7f7f7;
 `;
 
-const Schedule = () => {
-  const [enrollments, setEnrollments] = useState([]);
+const Schedule = ({ currentUser }) => {
+  const [userEnrollments, setUserEnrollments] = useState([]);
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    const fetchEnrollments = async () => {
+    const fetchUserEnrollments = async () => {
       try {
-        const response = await fetch('http://localhost:3001/enrollment');
+        const response = await fetch(`http://localhost:3001/enrollment?StuID=${currentUser.StuID}`);
         if (response.ok) {
-          const enrollmentData = await response.json();
-          setEnrollments(enrollmentData);
+          const userEnrollmentData = await response.json();
+          setUserEnrollments(userEnrollmentData);
         } else {
-          console.error('Failed to fetch enrollments');
+          console.error('Failed to fetch user enrollments');
         }
       } catch (error) {
-        console.error('Error during enrollment fetch:', error);
+        console.error('Error during user enrollment fetch:', error);
       }
     };
 
@@ -70,17 +71,17 @@ const Schedule = () => {
       }
     };
 
-    fetchEnrollments();
+    fetchUserEnrollments();
     fetchCourses();
-  }, []);
+  }, [currentUser]);
 
   const getCourseInfo = (courseID) => {
     return courses.find((course) => course.courseID === courseID);
   };
 
   const renderScheduleTable = () => {
-    if (enrollments.length === 0) {
-      return <h3 style={{color:'red'}}>คุณยังไม่มีการลงทะเบียน</h3>;
+    if (userEnrollments.length === 0) {
+      return <h3 style={{ color: 'red' }}>คุณยังไม่มีการลงทะเบียน</h3>;
     }
 
     return (
@@ -94,12 +95,12 @@ const Schedule = () => {
           </tr>
         </thead>
         <tbody>
-          {enrollments.map((enrollment) => {
+          {userEnrollments.map((enrollment) => {
             const courseInfo = getCourseInfo(enrollment.courseID);
 
             if (courseInfo) {
               return (
-                <tr key={enrollment.id}>
+                <tr key={enrollment.EnrollmentID}>
                   <ColoredTableData>{courseInfo.schedule.day}</ColoredTableData>
                   <ColoredTableData>{courseInfo.schedule.time}</ColoredTableData>
                   <ColoredTableData>{courseInfo.courseName}</ColoredTableData>

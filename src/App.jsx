@@ -12,7 +12,6 @@ import CourseList from './pages/CourseList';
 import Enrollment from './pages/Enrollment';
 import Dashboard from './pages/Dashboard';
 import NewsDetails from './pages/NewsDetails';
-
 import usersData from './assets/data.json';
 import Schedule from './pages/Schedule';
 
@@ -24,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: ##EBEBE8;
+    background-color: #EBEBE8;
     font-family: 'Kanit', sans-serif;
   }
 `;
@@ -99,9 +98,9 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home userData={currentUser} />} />
                 <Route path="/user" element={<User userData={currentUser} />} />
-                <Route path="/courses" element={<CourseList courses={usersData.courses} />}/>
+                <Route path="/courses" element={<CourseList courses={usersData.courses} />} />
                 <Route path="/news/:id" element={<NewsDetails />} />
-                <Route path="/enrollment" element={<Enrollment handleEnrollment={handleEnrollment} currentUser={currentUser} courses={usersData.courses} />}/>
+                <Route path="/enrollment" element={<Enrollment handleEnrollment={handleEnrollment} currentUser={currentUser} courses={usersData.courses} />} />
                 <Route path="/dashboard" element={<Dashboard currentUser={currentUser} />} />
                 <Route path="/schedule" element={<Schedule currentUser={currentUser} />} />
               </Routes>

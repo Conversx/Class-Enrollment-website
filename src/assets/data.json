@@ -133,5 +133,18 @@
     }
   ],
   "enrollment": [
+    {
+      "id": "dac9",
+      "StuID": "8888888888",
+      "EnrollmentID": "EN1709517288166",
+      "courseID": "327101",
+      "courseName": "Calculus I",
+      "credit": 3,
+      "schedule": {
+        "day": "Monday",
+        "time": "10:00 AM - 12:00 PM",
+        "location": "Room 101"
+      }
+    }
   ]
 }

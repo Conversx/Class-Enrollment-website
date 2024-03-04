@@ -138,6 +138,7 @@ const Enrollment = ({ courses, currentUser }) => {
 
     const newUser = {
       StuID: currentUser.StuID,
+      EnrollmentID: generateEnrollmentID(), // New line: Generate EnrollmentID
       courseID: courseID,
       courseName: courseName,
       credit: credit,
@@ -171,6 +172,11 @@ const Enrollment = ({ courses, currentUser }) => {
       console.error('Error during enrollment:', error);
       alert('An error occurred during enrollment');
     }
+  };
+
+  // New function: Generate EnrollmentID
+  const generateEnrollmentID = () => {
+    return `EN${Date.now()}`;
   };
 
   const handleNextPage = () => {
