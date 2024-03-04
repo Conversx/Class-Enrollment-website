@@ -16,8 +16,8 @@ const ScheduleTable = styled.table`
   width: 150%;
   border-collapse: collapse;
   margin-top: 20px;
-  border: 2px solid #006665; /* เพิ่มกรอบในสีที่เลือก */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
+  border: 2px solid #006665;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
 
 const TableHeader = styled.th`
@@ -34,7 +34,7 @@ const TableData = styled.td`
 `;
 
 const ColoredTableData = styled(TableData)`
-  background-color: #f7f7f7; /* เพิ่มสีพื้นหลังให้กับข้อมูลในตาราง */
+  background-color: #f7f7f7;
 `;
 
 const Schedule = () => {
@@ -79,6 +79,10 @@ const Schedule = () => {
   };
 
   const renderScheduleTable = () => {
+    if (enrollments.length === 0) {
+      return <h3 style={{color:'red'}}>คุณยังไม่มีการลงทะเบียน</h3>;
+    }
+
     return (
       <ScheduleTable>
         <thead>
@@ -92,8 +96,7 @@ const Schedule = () => {
         <tbody>
           {enrollments.map((enrollment) => {
             const courseInfo = getCourseInfo(enrollment.courseID);
-            
-            // Check if courseInfo exists before accessing its properties
+
             if (courseInfo) {
               return (
                 <tr key={enrollment.id}>
@@ -104,14 +107,13 @@ const Schedule = () => {
                 </tr>
               );
             } else {
-              return null; // or handle the case where courseInfo is undefined
+              return null;
             }
           })}
         </tbody>
       </ScheduleTable>
     );
   };
-  
 
   return (
     <SchedulePage>

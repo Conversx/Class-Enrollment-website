@@ -47,7 +47,7 @@
       "avatar": "/src/assets/ceo.jpg",
       "firstName": "Test",
       "lastName": "Kung",
-      "EfirstName": "Test", 
+      "EfirstName": "Test",
       "ElastName": "kung",
       "faculty": "ศิลปศาสตร์และวิทยาศาสตร์",
       "major": "เทคโนโลยีสารสนเทศ",
@@ -133,41 +133,5 @@
     }
   ],
   "enrollment": [
-    {
-      "id": "6441","StuID": "6421605200",
-      "courseID": "327101","courseName": "Calculus I","credit": 3,
-      "schedule": {
-        "day": "Monday",
-        "time": "10:00 AM - 12:00 PM",
-        "location": "Room 101"
-      }
-    },
-    {
-      "id": "8e0e","StuID": "6421605200",
-      "courseID": "327102","courseName": "Calculus II","credit": 3,
-      "schedule": {
-        "day": "Wednesday",
-        "time": "2:00 PM - 4:00 PM",
-        "location": "Room 201"
-      }
-    },
-    {
-      "id": "7aad","StuID": "6421605200",
-      "courseID": "327203","courseName": "English","credit": 2,
-      "schedule": {
-        "day": "Tuesday",
-        "time": "9:00 AM - 11:00 AM",
-        "location": "Room 102"
-      }
-    },
-    {
-      "id": "3ac3","StuID": "6421605200",
-      "courseID": "353201","courseName": "Programming","credit": 3,
-      "schedule": {
-        "day": "Monday",
-        "time": "3:00 PM - 5:00 PM",
-        "location": "Room 202"
-      }
-    }
   ]
 }
