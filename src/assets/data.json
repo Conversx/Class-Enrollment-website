@@ -102,7 +102,7 @@
     },
     {
       "id": "6",
-      "courseID": "327102",
+      "courseID": "353202",
       "courseName": "Programming II",
       "credit": 3,
       "description": "รายวิชาที่เน้นการศึกษาเกี่ยวกับคณิตศาสตร์แบบอนุกรม รวมถึงการบวก ลบ คูณ หาร ของจำนวนจริง และการแทนด้วยกราฟและตาราง",
@@ -113,66 +113,5 @@
       }
     }
   ],
-  "enrollment": [
-    {
-      "id": "f0ee",
-      "StuID": "6421605200",
-      "courseID": "327101",
-      "courseName": "Calculus I",
-      "credit": 3,
-      "schedule": {
-        "day": "Monday",
-        "time": "10:00 AM - 12:00 PM",
-        "location": "Room 101"
-      }
-    },
-    {
-      "id": "f6b4",
-      "StuID": "6421605200",
-      "courseID": "327102",
-      "courseName": "Calculus II",
-      "credit": 3,
-      "schedule": {
-        "day": "Wednesday",
-        "time": "2:00 PM - 4:00 PM",
-        "location": "Room 201"
-      }
-    },
-    {
-      "id": "8cb6",
-      "StuID": "6421605200",
-      "courseID": "327203",
-      "courseName": "English",
-      "credit": 2,
-      "schedule": {
-        "day": "Tuesday",
-        "time": "9:00 AM - 11:00 AM",
-        "location": "Room 102"
-      }
-    },
-    {
-      "id": "c3fc",
-      "StuID": "6421605200",
-      "courseID": "353201",
-      "courseName": "Programming",
-      "credit": 3,
-      "schedule": {
-        "day": "Monday",
-        "time": "3:00 PM - 5:00 PM",
-        "location": "Room 202"
-      }
-    },
-    {
-      "id": "5b46",
-      "StuID": "6421605200",
-      "courseID": "327509",
-      "courseName": "Science",
-      "credit": 3,
-      "schedule": {
-        "day": "Thursday",
-        "time": "1:00 PM - 3:00 PM",
-        "location": "Room 301"
-      }
-    }
-  ]
+  "enrollment": []
 }
